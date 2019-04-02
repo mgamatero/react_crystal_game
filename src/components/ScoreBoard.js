@@ -10,7 +10,7 @@ const ScoreBoard = (props) => {
                 `
     return (
         <div>
-            <div className="jumbotron p-2">
+            <div className="jumbotron p-2 bg-secondary">
                 <h5 className="text-center">Scores</h5>
                 {body}
 
