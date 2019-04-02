@@ -28,5 +28,13 @@
   "main": "index.js",
   "devDependencies": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgamatero/react_crystal_game.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mgamatero/react_crystal_game/issues"
+  },
+  "homepage": "https://github.com/mgamatero/react_crystal_game#readme"
 }

@@ -2,6 +2,13 @@ import React from 'react';
 import ScoreBoard from './ScoreBoard';
 import Images from './Images';
 import './App.css';
+
+
+import Guitar1 from '../assets/images/baby_taylor.jpg';
+import Guitar2 from '../assets/images/guild_m20.jpg';
+import Guitar3 from '../assets/images/martin_00015m.jpg';
+import Guitar4 from '../assets/images/takamine_nex.jpg';
+
 class App extends React.Component {
 
     state = {
@@ -67,25 +74,16 @@ class App extends React.Component {
         }
     }
 
-
-
-
-
-
     componentDidMount() {
         this.initialize();
     }
 
-
-
-
-
-
-
-
-
-
     render() {
+
+        // let Guitar1 = require('../assets/images/baby_taylor.jpg');
+        // let Guitar2 = require('../assets/images/guild_m20.jpg');
+        // let Guitar3 = require('../assets/images/martin_00015m.jpg');
+        // let Guitar4 = require('../assets/images/takamine_nex.jpg');
 
         return (
             <div id="imageBackground" >
@@ -100,15 +98,15 @@ class App extends React.Component {
 
                     <div className="row px-5 py-2">
                         <div className="col-6 col-sm-3">
-                            <Images imageid="1" srcAddress="./images/baby_taylor.jpg" handleClickedImage={this.handleClickedImage}/>                            </div>
+                            <Images imageid="1" srcAddress={Guitar1} handleClickedImage={this.handleClickedImage}/>                            </div>
                         <div className="col-6 col-sm-3">
-                            <Images imageid="2" srcAddress="./images/guild_m20.jpg" handleClickedImage={this.handleClickedImage}/>
+                            <Images imageid="2" srcAddress={Guitar2} handleClickedImage={this.handleClickedImage}/>
                         </div>
                         <div className="col-6 col-sm-3">
-                            <Images imageid="3" srcAddress="./images/martin_00015m.jpg" handleClickedImage={this.handleClickedImage} />
+                            <Images imageid="3" srcAddress={Guitar3} handleClickedImage={this.handleClickedImage} />
                         </div>
                         <div className="col-6 col-sm-3">
-                            <Images imageid="4" srcAddress="./images/takamine_nex.jpg" handleClickedImage={this.handleClickedImage}/>
+                            <Images imageid="4" srcAddress={Guitar4} handleClickedImage={this.handleClickedImage}/>
                         </div>
                     </div>
                 </div>
@@ -120,3 +118,16 @@ class App extends React.Component {
 
 
 export default App;
+
+
+
+                        //     <Images imageid="1" srcAddress="./images/baby_taylor.jpg" handleClickedImage={this.handleClickedImage}/>                            </div>
+                        // <div className="col-6 col-sm-3">
+                        //     <Images imageid="2" srcAddress="./images/guild_m20.jpg" handleClickedImage={this.handleClickedImage}/>
+                        // </div>
+                        // <div className="col-6 col-sm-3">
+                        //     <Images imageid="3" srcAddress="./images/martin_00015m.jpg" handleClickedImage={this.handleClickedImage} />
+                        // </div>
+                        // <div className="col-6 col-sm-3">
+                        //     <Images imageid="4" srcAddress="./images/takamine_nex.jpg" handleClickedImage={this.handleClickedImage}/>
+                        // </div>
