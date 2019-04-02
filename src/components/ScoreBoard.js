@@ -18,7 +18,7 @@ const ScoreBoard = (props) => {
         <div>
             <div className="row py-4">
 
-                <div className="d-none d-sm-block col-sm-8 text-center text-light border rounded">
+                <div className="d-none d-md-block col-md-8 text-center text-light border rounded">
                     <div className="display-4">
                         "Crystal Game"
                         </div>
@@ -26,7 +26,7 @@ const ScoreBoard = (props) => {
                         {instructions}
                     </div>
                 </div>
-                <div className="col-sm-4 text-center text-light border rounded score">
+                <div className="col-md-4 text-center text-light border rounded score">
                     <h4>Scores</h4>
                     <h5>Current Score</h5>
                     {currScore}

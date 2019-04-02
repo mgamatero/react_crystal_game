@@ -59,7 +59,7 @@ class App extends React.Component {
 
     scoreDecision = () => {
         if (this.state.currentScore > this.state.goalScore){
-            let lose = new Audio('./audio/loser.m4a');
+            let lose = new Audio('../assets/audio/loser.m4a');
             lose.play();
             
             console.log("Lost");
@@ -80,10 +80,6 @@ class App extends React.Component {
 
     render() {
 
-        // let Guitar1 = require('../assets/images/baby_taylor.jpg');
-        // let Guitar2 = require('../assets/images/guild_m20.jpg');
-        // let Guitar3 = require('../assets/images/martin_00015m.jpg');
-        // let Guitar4 = require('../assets/images/takamine_nex.jpg');
 
         return (
             <div id="imageBackground" >
@@ -119,15 +115,3 @@ class App extends React.Component {
 
 export default App;
 
-
-
-                        //     <Images imageid="1" srcAddress="./images/baby_taylor.jpg" handleClickedImage={this.handleClickedImage}/>                            </div>
-                        // <div className="col-6 col-sm-3">
-                        //     <Images imageid="2" srcAddress="./images/guild_m20.jpg" handleClickedImage={this.handleClickedImage}/>
-                        // </div>
-                        // <div className="col-6 col-sm-3">
-                        //     <Images imageid="3" srcAddress="./images/martin_00015m.jpg" handleClickedImage={this.handleClickedImage} />
-                        // </div>
-                        // <div className="col-6 col-sm-3">
-                        //     <Images imageid="4" srcAddress="./images/takamine_nex.jpg" handleClickedImage={this.handleClickedImage}/>
-                        // </div>
