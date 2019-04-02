@@ -9,6 +9,8 @@ import Guitar2 from '../assets/images/guild_m20.jpg';
 import Guitar3 from '../assets/images/martin_00015m.jpg';
 import Guitar4 from '../assets/images/takamine_nex.jpg';
 
+import LoserAudio from '../assets/audio/loser.m4a';
+
 class App extends React.Component {
 
     state = {
@@ -59,7 +61,7 @@ class App extends React.Component {
 
     scoreDecision = () => {
         if (this.state.currentScore > this.state.goalScore){
-            let lose = new Audio('../assets/audio/loser.m4a');
+            let lose = new Audio(LoserAudio);
             lose.play();
             
             console.log("Lost");
