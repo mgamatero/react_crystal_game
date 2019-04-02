@@ -52,6 +52,9 @@ class App extends React.Component {
 
     scoreDecision = () => {
         if (this.state.currentScore > this.state.goalScore){
+            let lose = new Audio('./audio/loser.m4a');
+            lose.play();
+            
             console.log("Lost");
             this.setState({totalLosses: this.state.totalLosses + 1})
             this.initialize()
@@ -85,30 +88,32 @@ class App extends React.Component {
     render() {
 
         return (
-            <div className = "container"  id="imageBackground" >
+            <div id="imageBackground" >
+            
+
+            <div className="container">
                 <ScoreBoard
                     goal={this.state.goalScore}
                     currScore={this.state.currentScore}
                     totWins={this.state.totalWins}
                     totLosses={this.state.totalLosses} />
 
-                <div className="container">
-                    <div className="row px-5">
+                    <div className="row px-5 py-2">
                         <div className="col-6 col-sm-3">
-                            <Images imageid="1" srcAddress="../assets/images/baby_taylor.jpg" handleClickedImage={this.handleClickedImage}/>
+                            <Images imageid="1" srcAddress="./images/baby_taylor.jpg" handleClickedImage={this.handleClickedImage}/>                            </div>
+                        <div className="col-6 col-sm-3">
+                            <Images imageid="2" srcAddress="./images/guild_m20.jpg" handleClickedImage={this.handleClickedImage}/>
                         </div>
                         <div className="col-6 col-sm-3">
-                            <Images imageid="2" srcAddress="./assets/images/guild_m20.jpg" handleClickedImage={this.handleClickedImage}/>
+                            <Images imageid="3" srcAddress="./images/martin_00015m.jpg" handleClickedImage={this.handleClickedImage} />
                         </div>
                         <div className="col-6 col-sm-3">
-                            <Images imageid="3" srcAddress="./assets/images/martin_00015m.jpg" handleClickedImage={this.handleClickedImage} />
-                        </div>
-                        <div className="col-6 col-sm-3">
-                            <Images imageid="4" srcAddress="./assets/images/takamine_nex.jpg" handleClickedImage={this.handleClickedImage}/>
+                            <Images imageid="4" srcAddress="./images/takamine_nex.jpg" handleClickedImage={this.handleClickedImage}/>
                         </div>
                     </div>
                 </div>
             </div>
+            
         )
     }
 }

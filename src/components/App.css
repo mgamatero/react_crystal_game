@@ -1,4 +1,4 @@
 #imageBackground{
     background-image: url('../assets/images/header.jpg');
-    
+    height: 100vh;
 }
